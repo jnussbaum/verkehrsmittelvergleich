@@ -1,6 +1,10 @@
 # CAS Programmierarbeit: Verkehrsmittel-Vergleich
 
-**Besuche unsere App live auf <https://jnussbaum.github.io/verkehrsmittelvergleich/>!**
+<div style="font-size: 20px; font-weight: bold; align: center">
+  🚀 Besuche unsere App live auf 
+  <a href="https://jnussbaum.github.io/verkehrsmittelvergleich/">https://jnussbaum.github.io/verkehrsmittelvergleich/</a>
+  !🚀
+</div>
 
 ## Unser Projekt
 
