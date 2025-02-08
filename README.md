@@ -1,27 +1,21 @@
-# CAS Programmierarbeit: Verkehrsmittel-Vergleich 
+# CAS Programmierarbeit: Verkehrsmittel-Vergleich
 
-Studenten: Roman Leuenberger, Johannes Nussbaum 
-
-Thematische Anbindung: Jürg Nietlispach: Funktionale Programmierung 
-
-Studiengang: CAS Modern Software Engineering & Development 
-
-## Aufgabenstellung 
-
-Im Rahmen des CAS müssen wir eine Programmierarbeit durchführen. Aufwand ca. 40 Stunden. Die Arbeit besteht aus 2 Teilen: 
-
-- Code (muss lauffähig sein, aber eher prototyp-mässig) 
-- Komponentendiagramm/UML 
+**Besuche unsere App live auf <https://jnussbaum.github.io/verkehrsmittelvergleich/>!**
 
 ## Unser Projekt
 
 Eine einfache React App, welche für ein Startort-Zielort-Paar verschiedene Verkehrsmittel anzeigt.
 Der User kann Abfahrtsort, Abfahrtszeit und Zielort angeben.
-Ein Klick auf den "Los geht's" Button sendet im Hintergrund Requests an die Google Routes API 
-(https://developers.google.com/maps/documentation/routes).
+Ein Klick auf den "Los geht's" Button sendet im Hintergrund Requests an die
+[Google Routes API](https://developers.google.com/maps/documentation/routes).
 
 Die Responses werden schön aufbereitet, sodass der User die Verkehrsmittel punkto Distanz und Dauer vergleichen kann
-(in Tabellenform und mit 2 Balkendiagrammen). 
+(in Tabellenform und mit 2 Balkendiagrammen).
+
+## Dokumentation
+
+- Komponentendiagramm/UML: `docs/ComponentDiagram.puml`
+- Rückblick/Lessons Learned: `docs/lessons-learned.md`
 
 ## Requirements für lokale Entwicklung
 
@@ -50,7 +44,12 @@ Auf <https://jnussbaum.github.io/verkehrsmittelvergleich/> ist die App öffentli
 in dem Zustand, wie sie beim letzten Mal `npm run deploy` war.
 Nach jeder Code-Änderung muss der Befehl erneut ausgeführt werden.
 
-## Dokumentation
+## Impressum
 
-- Komponentendiagramm/UML: `docs/ComponentDiagram.puml`
-- Rückblick/Lessons Learned: `docs/lessons-learned.md`
+- Studenten: Roman Leuenberger, Johannes Nussbaum
+- Thematische Anbindung: Jürg Nietlispach: Funktionale Programmierung
+- Studiengang: HSLU: CAS Modern Software Engineering & Development
+- Aufgabenstellung: Im Rahmen des CAS müssen wir eine Programmierarbeit durchführen.
+  Aufwand ca. 40 Stunden. Die Arbeit besteht aus 2 Teilen:
+  - Code (muss lauffähig sein, aber eher prototyp-mässig)
+  - Komponentendiagramm/UML
