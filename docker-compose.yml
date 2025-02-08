@@ -3,8 +3,8 @@ services:
     container_name: react-app-dev
     build:
       context: .
-    environment:
-      - REACT_APP_API_KEY=${REACT_APP_API_KEY}
+    env_file:
+      - ".env.development.local"
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules  # Prevents node_modules from being overwritten
