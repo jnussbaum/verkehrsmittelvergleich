@@ -19,17 +19,23 @@ Eine einfache React App, welche für ein Startort-Zielort-Paar verschiedene Verk
 Der User kann Abfahrtsort, Abfahrtszeit und Zielort angeben.
 Ein Klick auf den "Los geht's" Button sendet im Hintergrund Requests an die Google Routes API 
 (https://developers.google.com/maps/documentation/routes).
+
 Die Responses werden schön aufbereitet, sodass der User die Verkehrsmittel punkto Distanz und Dauer vergleichen kann
 (in Tabellenform und mit 2 Balkendiagrammen). 
 
 ## Requirements für lokale Entwicklung
 
 - Ein Google Routes API Key muss hinterlegt sein in `.env.development.local`, in der Form `REACT_APP_API_KEY=xyz`.
-- Führe folgende Befehle aus im Terminal: `docker-compose up --build`
+- Starte einen lokalen Live-Server:
+  - Variante 1:
+    - Führe folgenden Befehl aus im Terminal: `docker-compose up --build`
+    - Dazu muss [Docker Desktop](https://www.docker.com/) installiert sein.
+  - Variante 2:
+    - Führe folgenden Befehl aus im Terminal: `npm start`
+    - Dazu muss Node (Version 23 oder höher) installiert sein.
 - Navigiere in einem Browser zu <http://localhost:3000/>
 - Die Code-Änderungen im Repository werden automatisch in der App reflektiert.
-- Alternative mit identischem Resultat: Im Terminal `npm start` ausführen.
-  Dazu muss Node (Version 23 oder höher) installiert sein.
+
 
 ## Deployment auf github.io
 
