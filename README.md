@@ -22,11 +22,27 @@ Ein Klick auf den "Los geht's" Button sendet im Hintergrund Requests an die Goog
 Die Responses werden schön aufbereitet, sodass der User die Verkehrsmittel punkto Distanz und Dauer vergleichen kann
 (in Tabellenform und mit 2 Balkendiagrammen). 
 
-## Requirements
+## Requirements für lokale Entwicklung
 
-- Ein gültiger Google Routes API Key muss hinterlegt sein in `.env`, in der Form `REACT_APP_API_KEY=xyz`.
+- Ein Google Routes API Key muss hinterlegt sein in `.env.development.local`, in der Form `REACT_APP_API_KEY=xyz`.
 - Führe folgende Befehle aus im Terminal: `docker-compose up --build`
 - Navigiere in einem Browser zu <http://localhost:3000/>
+- Die Code-Änderungen im Repository werden automatisch in der App reflektiert.
+- Alternative mit identischem Resultat: Im Terminal `npm start` ausführen.
+  Dazu muss Node (Version 23 oder höher) installiert sein.
+
+## Deployment auf github.io
+
+github.io benötigt einen Google Routes API Key, der im Quellcode sichtbar sein wird.
+Deshalb muss in `.env.production` die Variable `REACT_APP_API_KEY` gesetzt sein auf einen API Key,
+dessen Gültigkeit auf den HTTP-Referrer <https://jnussbaum.github.io/> eingeschränkt ist.
+Somit kann jedermann den API Key einsehen, aber nichts damit anfangen.
+
+`npm run deploy` erstellt auf einem separaten Branch `gh-pages`
+ein optimiertes Build (d.h. minimiertes JavaScript und CSS) und deployt es zu github.io.
+Auf <https://jnussbaum.github.io/verkehrsmittelvergleich/> ist die App öffentlich erreichbar,
+in dem Zustand, wie sie beim letzten Mal `npm run deploy` war.
+Nach jeder Code-Änderung muss der Befehl erneut ausgeführt werden.
 
 ## Dokumentation
 
