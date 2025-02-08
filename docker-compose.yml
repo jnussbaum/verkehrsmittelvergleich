@@ -1,0 +1,13 @@
+services:
+  frontend:
+    container_name: react-app-dev
+    build:
+      context: .
+    environment:
+      - REACT_APP_API_KEY=${REACT_APP_API_KEY}
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules  # Prevents node_modules from being overwritten
+    ports:
+      - "3000:3000"
+    command: npm run start

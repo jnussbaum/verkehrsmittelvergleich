@@ -24,8 +24,8 @@ Die Responses werden schön aufbereitet, sodass der User die Verkehrsmittel punk
 
 ## Requirements
 
-- Ein gültiger Google Routes API Key muss hinterlegt sein in `app/.env.local`, in der Form `REACT_APP_API_KEY=xyz`.
-- Führe folgende Befehle aus im Terminal: `cd app; npm i; npm start`
+- Ein gültiger Google Routes API Key muss hinterlegt sein in `.env`, in der Form `REACT_APP_API_KEY=xyz`.
+- Führe folgende Befehle aus im Terminal: `docker-compose up --build`
 - Navigiere in einem Browser zu <http://localhost:3000/>
 
 ## Dokumentation
