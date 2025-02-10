@@ -43,8 +43,7 @@ Es hat lange gedauert, bis ich verstanden habe, dass ich folgendes React-spezifi
 // App.tsx
 const [travelData, setTravelData] = useState();
 getTravelData(from, to, setTravelData);
-return <ComparisonTable travelData = {travelData}
-/>;
+return <ComparisonTable travelData = {travelData}/>;
 
 // googleMapsAPI.ts
 async function getTravelData(
@@ -52,7 +51,7 @@ async function getTravelData(
     to: string,
     setTravelData: (data) => void,
 ): Promise<void> {
-    // make API calls to obtain `drive`, `bicycle`, ...)
+    // make API calls to obtain `drive`, `bicycle`, ...
     setTravelData({drive, bicycle, walk, twoWheeler, transit});
 }
 ```
@@ -83,7 +82,7 @@ dann muss verhindert werden, dass zwei separate Ticks "1000m" und "1km" angezeig
 Unittests haben sich als nützliches Hilfsmittel erwiesen,
 und ebenso die Reduzierung der maximalen Anzahl Ticks.
 
-## Unittests mit Jest (Johannes)
+## Unittests mit Jest/Vitest (Johannes)
 
 Ich habe viel Erfahrung mit Unit Tests in Python,
 doch die Herangehensweise in Typescript ist anders als gewohnt.

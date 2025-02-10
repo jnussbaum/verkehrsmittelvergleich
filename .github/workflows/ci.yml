@@ -45,4 +45,4 @@ jobs:
         run: npm install
 
       - name: Run Tests
-        run: npm test -- --watchAll=false --ci
+        run: npm run test:no-watch

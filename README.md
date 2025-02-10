@@ -23,7 +23,7 @@ Die Responses werden schön aufbereitet, sodass der User die Verkehrsmittel punk
 
 ## Requirements für lokale Entwicklung
 
-- Ein Google Routes API Key muss hinterlegt sein in `.env.development.local`, in der Form `REACT_APP_API_KEY=xyz`.
+- Ein Google Routes API Key muss hinterlegt sein in `.env.development.local`, in der Form `VITE_API_KEY=xyz`.
 - Starte einen lokalen Live-Server:
   - Variante 1:
     - Führe folgenden Befehl aus im Terminal: `docker-compose up --build`
@@ -38,7 +38,7 @@ Die Responses werden schön aufbereitet, sodass der User die Verkehrsmittel punk
 ## Deployment auf github.io
 
 github.io benötigt einen Google Routes API Key, der im Quellcode sichtbar sein wird.
-Deshalb muss in `.env.production` die Variable `REACT_APP_API_KEY` gesetzt sein auf einen API Key,
+Deshalb muss in `.env.production` die Variable `VITE_API_KEY` gesetzt sein auf einen API Key,
 dessen Gültigkeit auf den HTTP-Referrer <https://jnussbaum.github.io/> eingeschränkt ist.
 Somit kann jedermann den API Key einsehen, aber nichts damit anfangen.
 
