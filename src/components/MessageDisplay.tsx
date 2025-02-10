@@ -25,7 +25,7 @@ export const MessageDisplay = () => {
 
     return (
         <div>
-            <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} />
+            <ToastContainer position="top-center" autoClose={2000} hideProgressBar={false} />
         </div>
     );
 };
