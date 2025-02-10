@@ -83,7 +83,7 @@ dann muss verhindert werden, dass zwei separate Ticks "1000m" und "1km" angezeig
 Unittests haben sich als nützliches Hilfsmittel erwiesen,
 und ebenso die Reduzierung der maximalen Anzahl Ticks.
 
-## Unittests mit Jest (Johannes)
+## Unittests mit Jest/Vitest (Johannes)
 
 Ich habe viel Erfahrung mit Unit Tests in Python,
 doch die Herangehensweise in Typescript ist anders als gewohnt.
