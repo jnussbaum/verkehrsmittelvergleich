@@ -9,7 +9,6 @@
     "@mui/material": "^6.4.1",
     "@mui/x-date-pickers": "^7.23.3",
     "chart.js": "^4.4.7",
-    "cra-template-typescript": "1.2.0",
     "date-fns": "^4.1.0",
     "dayjs": "^1.11.13",
     "react": "^19.0.0",
