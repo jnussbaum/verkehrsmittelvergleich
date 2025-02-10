@@ -15,16 +15,15 @@
     "react": "^19.0.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "^5.0.1",
     "react-toastify": "^11.0.2",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
