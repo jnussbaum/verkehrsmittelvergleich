@@ -25,7 +25,7 @@
     "test": "vitest watch",
     "test:no-watch": "vitest run",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
