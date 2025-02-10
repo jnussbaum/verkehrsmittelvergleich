@@ -5,7 +5,7 @@ import { Messages } from "../models/messages";
 
 
 const USE_REAL_API = true;
-const API_KEY = ensureString(process.env.REACT_APP_API_KEY);
+const VITE_API_KEY = ensureString(import.meta.env.VITE_API_KEY);
 
 
 function ensureString(str: string | undefined | void): string {
@@ -108,7 +108,7 @@ async function makeApiCall(
     }
     const headers = {
         "Content-Type": "application/json",
-        "X-Goog-Api-Key": API_KEY,
+        "X-Goog-Api-Key": VITE_API_KEY,
         "X-Goog-FieldMask": "routes.duration,routes.distanceMeters",
     };
     const response = await fetch(url, {
