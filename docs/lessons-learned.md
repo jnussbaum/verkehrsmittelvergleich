@@ -43,8 +43,7 @@ Es hat lange gedauert, bis ich verstanden habe, dass ich folgendes React-spezifi
 // App.tsx
 const [travelData, setTravelData] = useState();
 getTravelData(from, to, setTravelData);
-return <ComparisonTable travelData = {travelData}
-/>;
+return <ComparisonTable travelData = {travelData}/>;
 
 // googleMapsAPI.ts
 async function getTravelData(
@@ -52,7 +51,7 @@ async function getTravelData(
     to: string,
     setTravelData: (data) => void,
 ): Promise<void> {
-    // make API calls to obtain `drive`, `bicycle`, ...)
+    // make API calls to obtain `drive`, `bicycle`, ...
     setTravelData({drive, bicycle, walk, twoWheeler, transit});
 }
 ```
