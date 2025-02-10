@@ -7,7 +7,7 @@ services:
       - ".env.development.local"
     volumes:
       - .:/usr/src/app
-      - /usr/src/app/node_modules  # Prevents node_modules from being overwritten
+      - /usr/src/app/node_modules # Prevents node_modules from being overwritten
     ports:
-      - "3000:3000"
+      - "5173:5173"
     command: npm run start

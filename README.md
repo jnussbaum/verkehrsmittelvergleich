@@ -31,9 +31,8 @@ Die Responses werden schön aufbereitet, sodass der User die Verkehrsmittel punk
   - Variante 2:
     - Führe folgenden Befehl aus im Terminal: `npm start`
     - Dazu muss Node (Version 23 oder höher) installiert sein.
-- Navigiere in einem Browser zu <http://localhost:3000/>
+- Navigiere in einem Browser zu <http://localhost:5173/>
 - Die Code-Änderungen im Repository werden automatisch in der App reflektiert.
-
 
 ## Deployment auf github.io
 
