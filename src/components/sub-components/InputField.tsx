@@ -41,7 +41,7 @@ export function InputField({ label, value, onChange, fieldName }: Props) {
         <>
             <TextField
                 type="text"
-                id="outlined-basic"
+                id={label}
                 label={label}
                 value={value}
                 onChange={(e) => handleChange(e.target.value)}
